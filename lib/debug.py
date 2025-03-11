@@ -12,9 +12,9 @@ Base.metadata.create_all(engine)
 print("Database created successfully!")
 
 # Add roles
-role1 = Role(character_name="SteveMwangi")
-role2 = Role(character_name="David")
-role2 = Role(character_name="Jane")
+role1 = Role(character_name="Alberto")
+role2 = Role(character_name="Gordon")
+role2 = Role(character_name="ray")
 
 
 session.add_all([role1, role2])
