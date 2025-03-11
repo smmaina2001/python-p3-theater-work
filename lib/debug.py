@@ -12,23 +12,23 @@ Base.metadata.create_all(engine)
 print("Database created successfully!")
 
 # Add roles
-role1 = Role(character_name="Scarzze")
-role2 = Role(character_name="Omello")
-role2 = Role(character_name="joy")
+role1 = Role(character_name="SteveMwangi")
+role2 = Role(character_name="David")
+role2 = Role(character_name="Jane")
 
 
 session.add_all([role1, role2])
 session.commit()
-print("Roles zimeongezwa!")
+print("Roles added successfully!")
 
 # Add auditions
-audition1 = Audition(actor="Willy Paul", location="Racecourse", phone="254789034321", hired=False, role=role1)
-audition2 = Audition(actor="Guy Fawkes", location="Theater", phone="254789034322", hired=False, role=role2)
-audition3 = Audition(actor="Scar Mkadinali", location="Circle", phone="254789034323", hired=False, role=role1)  # Fixed role
+audition1 = Audition(actor="Will Smith", location="Los Angeles", phone="254722775430", hired=False, role=role1)
+audition2 = Audition(actor="Don Johnson", location="Miami", phone="254722775431", hired=False, role=role2)
+audition3 = Audition(actor="Kerry Washington", location="Florida", phone="254722775432", hired=False, role=role1)  # Fixed role
 
 session.add_all([audition1, audition2, audition3])
 session.commit()
-print("Auditions zimeongezwa!")
+print("Auditions added successfully !")
 
 # Debugging mode
 if __name__ == '__main__':
