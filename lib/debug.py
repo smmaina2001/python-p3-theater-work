@@ -14,17 +14,17 @@ print("Database created successfully!")
 # Add roles
 role1 = Role(character_name="Alberto")
 role2 = Role(character_name="Gordon")
-role2 = Role(character_name="ray")
+role3 = Role(character_name="ray")
 
 
-session.add_all([role1, role2])
+session.add_all([role1, role2,role3])
 session.commit()
 print("Roles added successfully!")
 
 # Add auditions
 audition1 = Audition(actor="Will Smith", location="Los Angeles", phone="254722775430", hired=False, role=role1)
 audition2 = Audition(actor="Don Johnson", location="Miami", phone="254722775431", hired=False, role=role2)
-audition3 = Audition(actor="Kerry Washington", location="Florida", phone="254722775432", hired=False, role=role1)  # Fixed role
+audition3 = Audition(actor="Kerry Washington", location="Florida", phone="254722775432", hired=False, role=role3) 
 
 session.add_all([audition1, audition2, audition3])
 session.commit()
